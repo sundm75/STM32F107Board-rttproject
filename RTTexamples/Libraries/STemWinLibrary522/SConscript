@@ -1,0 +1,19 @@
+Import('RTT_ROOT')
+Import('rtconfig')
+from building import *
+
+cwd     = GetCurrentDir()
+src = Split("""
+os/GUI_X.c
+""")
+	
+	
+path = [cwd + '/inc']
+	
+CPPPATH = path
+group = []
+
+if GetDepend(['RT_USING_EMWIN']):
+    group = DefineGroup('emWin_library', src, depend = ['RT_USING_EMWIN'], CPPPATH = CPPPATH)
+
+Return('group')

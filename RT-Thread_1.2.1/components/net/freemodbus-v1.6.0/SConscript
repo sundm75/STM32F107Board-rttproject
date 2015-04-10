@@ -1,0 +1,88 @@
+Import('RTT_ROOT')
+from building import *
+
+src = Split("""
+modbus/functions/mbfuncdiag.c
+modbus/functions/mbutils.c
+modbus/functions/mbfuncother.c
+modbus/rtu/mbcrc.c
+modbus/port/port.c
+""")
+
+master_rtu_src = Split("""
+modbus/functions/mbfunccoils_m.c
+modbus/functions/mbfuncdisc_m.c
+modbus/functions/mbfuncholding_m.c
+modbus/functions/mbfuncinput_m.c
+modbus/rtu/mbrtu_m.c
+modbus/port/portevent_m.c
+modbus/port/portserial_m.c
+modbus/port/porttimer_m.c
+""")
+
+slave_rtu_src = Split("""
+modbus/functions/mbfunccoils.c
+modbus/functions/mbfuncdisc.c
+modbus/functions/mbfuncholding.c
+modbus/functions/mbfuncinput.c
+modbus/rtu/mbrtu.c
+modbus/mb.c
+modbus/port/portevent.c
+modbus/port/portserial.c
+modbus/port/porttimer.c
+""")
+
+slave_tcp_src = Split("""
+modbus/functions/mbfunccoils.c
+modbus/functions/mbfuncdisc.c
+modbus/functions/mbfuncholding.c
+modbus/functions/mbfuncinput.c
+modbus/mb.c
+modbus/port/portevent.c
+modbus/port/porttcp.c
+modbus/tcp/mbtcp.c
+""")
+
+
+master_slave_rtu_src = Split("""
+modbus/functions/mbfunccoils.c
+modbus/functions/mbfunccoils_m.c
+modbus/functions/mbfuncdisc.c
+modbus/functions/mbfuncdisc_m.c
+modbus/functions/mbfuncholding.c
+modbus/functions/mbfuncholding_m.c
+modbus/functions/mbfuncinput.c
+modbus/functions/mbfuncinput_m.c
+modbus/rtu/mbrtu.c
+modbus/rtu/mbrtu_m.c
+modbus/mb.c
+modbus/port/portevent.c
+modbus/port/portevent_m.c
+modbus/port/portserial.c
+modbus/port/portserial_m.c
+modbus/port/porttimer.c
+modbus/port/porttimer_m.c
+""")
+
+# The set of source files associated with this SConscript file.
+path = [GetCurrentDir() + '/modbus/include',
+    GetCurrentDir() + '/modbus/rtu',
+    GetCurrentDir() + '/modbus/ascii',
+    GetCurrentDir() + '/modbus/tcp',
+    GetCurrentDir() + '/modbus/port']
+
+if GetDepend(['RT_MODBUS_MASTER_RTU']):
+    src += master_rtu_src
+
+if GetDepend(['RT_MODBUS_SLAVE_RTU']):
+    src += slave_rtu_src
+	
+if GetDepend(['RT_MODBUS_SLAVE_TCP']):
+    src += slave_tcp_src
+
+if GetDepend(['RT_MODBUS_MASTER_SLAVE_RTU']):
+    src += master_slave_rtu_src
+
+group = DefineGroup('FreeModbus', src, depend = ['RT_USING_MODBUS'], CPPPATH = path)
+
+Return('group')

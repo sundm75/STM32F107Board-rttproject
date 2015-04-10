@@ -1,0 +1,15 @@
+本项目为1.操作系统实验3_3静态内存管理之内存池，对应说明文档在RTTProject\Documents目录下。
+本项目采用scons python工具自动生成。
+一、
+1.project.eww为IAR工程项目，project.uvproj为MDK工程项目
+2.creatEWARMproject.bat creatMDKARMproject.bat分别为创建IAR工程和MDK工程的批处理文件
+3.killEWARMobj.bat killMDKARMobj.bat分别为删除IAR工程和MDK工程中目标文件的批处理文件，用于工程文件夹减肥用。
+二、
+具体用scons python生成工程，及编译工程，请参考rtthread网站手册。
+
+三、
+本工程初始使用时，需要修改
+MDK：options->debug->setting->FlashDownload 标签页中添加 STM32F10x Connectiovity Line Flash ; Options->Target->标签页中 勾选Use MicroLIB 
+IAR: options->Debugger->Setup->Driver->中添加 J-Link/J-Trace
+
+勾选microlib，由于其提供一个有限的stdio子系统，它仅支持未缓冲的stdin,stdout和stderr.这样即可使用printf()来显示应用程序中的诊断消息.如不选择，程序无法正常运行。

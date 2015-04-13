@@ -137,11 +137,11 @@ extern "C" {     /* Make sure we have C-declarations in C++ programs */
 #endif
 
 #ifndef   SHOW_GUIDEMO_LISTVIEW
-  #define SHOW_GUIDEMO_LISTVIEW          (1)
+  #define SHOW_GUIDEMO_LISTVIEW          (0)
 #endif
 
 #ifndef   SHOW_GUIDEMO_SPEED
-  #define SHOW_GUIDEMO_SPEED             (1)
+  #define SHOW_GUIDEMO_SPEED             (0)
 #endif
 
 #ifndef   SHOW_GUIDEMO_TREEVIEW
@@ -161,7 +161,7 @@ extern "C" {     /* Make sure we have C-declarations in C++ programs */
 #endif
 
 #ifndef   SHOW_GUIDEMO_AUTOMOTIVE
-  #define SHOW_GUIDEMO_AUTOMOTIVE        (1)
+  #define SHOW_GUIDEMO_AUTOMOTIVE        (0)
 #endif
 
 #ifndef   SHOW_GUIDEMO_TRANSPARENTDIALOG

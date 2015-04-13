@@ -5,6 +5,8 @@
     3.DynamicCali() ：动态校准函数
     4.StopCali()：退出动态校准程序
     5.TouchCali() ：触摸屏校准函数
+	
+	6.重启后运行startgui(),进行demo显示。由于内存不够，不可以同时选择全部的demo, 在GUIDEMO.h 中选择相应的demo
 board.h中，注释掉 RT_USING_SPI3. 
 由于*.a文件不能自动添加，如果采用scons构建IAR工程，需要手工添加STemWin522_CM3_IAR.a文件。MDK建构MDK工程，需要手工添加STemWin522_CM3_Keil.lib。
 本项目采用scons python工具自动生成。

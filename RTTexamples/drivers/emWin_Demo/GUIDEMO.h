@@ -133,7 +133,7 @@ extern "C" {     /* Make sure we have C-declarations in C++ programs */
 #endif
 
 #ifndef   SHOW_GUIDEMO_GRAPH
-  #define SHOW_GUIDEMO_GRAPH             (0)
+  #define SHOW_GUIDEMO_GRAPH             (1)
 #endif
 
 #ifndef   SHOW_GUIDEMO_LISTVIEW
@@ -169,7 +169,7 @@ extern "C" {     /* Make sure we have C-declarations in C++ programs */
 #endif
 
 #ifndef   SHOW_GUIDEMO_AATEXT
-  #define SHOW_GUIDEMO_AATEXT            (1)
+  #define SHOW_GUIDEMO_AATEXT            (0)
 #endif
 
 #ifndef   SHOW_GUIDEMO_BARGRAPH

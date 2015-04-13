@@ -57,12 +57,13 @@ void rt_gui_thread_entry(void* parameter)
   Timer5Config();
   GUI_Init();
   GUI_Initialized = 1;
+  GUIDEMO_Main();
 }
 
 void startgui(void)
 {
     rt_thread_t init_thread;
-    init_thread = rt_thread_create("GUI_Exec", rt_gui_thread_entry, RT_NULL, 0x0200, 6, 5); 
+    init_thread = rt_thread_create("GUI_Exec", rt_gui_thread_entry, RT_NULL, 0x0800, 6, 5); 
     if(init_thread != RT_NULL)
     {
             rt_thread_startup(init_thread);

@@ -100,7 +100,7 @@ void rt_init_thread_entry(void* parameter)
 		ui_button();*/
                                
                 /*‘À––demo */
-                application_init();           
+                //application_init();           
                 
 	}
 #endif        

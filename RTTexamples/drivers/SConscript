@@ -17,8 +17,11 @@ if GetDepend('RT_USING_RTGUI')== False:
     SrcRemove(src, 'calculator.c')
     SrcRemove(src, 'touch_spi.c')
     SrcRemove(src, 'lcd_ssd1289.c')	
-	
 
+if GetDepend('RT_USING_RF') == False:
+	SrcRemove(src, 'NRF24L01.c')
+	SrcRemove(src, 'NRF24L012.c')
+	SrcRemove(src, 'rfspi.c')
 	
 CPPPATH = [cwd]
 

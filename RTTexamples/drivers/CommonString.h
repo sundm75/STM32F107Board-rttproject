@@ -4,7 +4,9 @@
 #include <rtthread.h>
 #include "ctype.h"
 #include "string.h"
+#if defined(RT_USING_DFS)
 #include <dfs_posix.h>
+#endif
 
 //将16进制字符串转换成16进制数如："12" 转换成0x12
 void  ASCIItoHEX(unsigned char* arrayin, unsigned char *arrayout);

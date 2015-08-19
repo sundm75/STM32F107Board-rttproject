@@ -55,7 +55,7 @@ Purpose     : Display controller configuration (single layer)
 #include "GUIDRV_FlexColor.h"
 
 #include <stm32f10x.h>
-#include "lcd_ssd1289.h"
+#include "lcddevice.h" 
 
 /*********************************************************************
 *
@@ -174,32 +174,62 @@ void LCD_X_Config(void) {
   GUI_DEVICE * pDevice;
   CONFIG_FLEXCOLOR Config = {0};
   GUI_PORT_API PortAPI = {0};
-  //
-  // Set display driver and color conversion
-  //
-  pDevice = GUI_DEVICE_CreateAndLink(GUIDRV_FLEXCOLOR, GUICC_M565, 0, 0);
-  //
-  // Display driver configuration, required for Lin-driver
-  //
+  
+  lcd_config();
+  
+  /*以下根据不同的显示控制器编写：ili9325 SSD1289*/
+  
+  /* Set display driver and color conversion*/
+  if ( getLcdIdCode()==0x8989)
+  {
+      pDevice = GUI_DEVICE_CreateAndLink(GUIDRV_FLEXCOLOR, GUICC_M565, 0, 0);
+  }
+  else if ( getLcdIdCode()==0x9325)
+  {
+      pDevice = GUI_DEVICE_CreateAndLink(GUIDRV_FLEXCOLOR, GUICC_565, 0, 0);
+  }
+
+  /* Display driver configuration, required for Lin-driver*/
   LCD_SetSizeEx (0, XSIZE_PHYS , YSIZE_PHYS);
   LCD_SetVSizeEx(0, VXSIZE_PHYS, VYSIZE_PHYS);
-    
-  GUI_TOUCH_Calibrate(GUI_COORD_X, 0, 240, TOUCH_AD_TOP, TOUCH_AD_BOTTOM);
-  GUI_TOUCH_Calibrate(GUI_COORD_Y, 0, 320, TOUCH_AD_LEFT, TOUCH_AD_RIGHT);
   
-  //
-  // Orientation
-  //
-  Config.Orientation = GUI_SWAP_XY;
-  GUIDRV_FlexColor_Config(pDevice, &Config);
-  //
-  // Set controller and operation mode
-  //
+  /* Touch driver configuration*/
+  if ( getLcdIdCode()==0x8989)
+  {
+    GUI_TOUCH_Calibrate(GUI_COORD_X, 0, 240, TOUCH_AD_TOP, TOUCH_AD_BOTTOM);
+    GUI_TOUCH_Calibrate(GUI_COORD_Y, 0, 320, TOUCH_AD_LEFT, TOUCH_AD_RIGHT);
+  }
+  else if ( getLcdIdCode()==0x9325)
+  {
+    GUI_TOUCH_Calibrate(GUI_COORD_X, 0, 240, TOUCH_AD_BOTTOM, TOUCH_AD_TOP);
+    GUI_TOUCH_Calibrate(GUI_COORD_Y, 0, 320, TOUCH_AD_RIGHT, TOUCH_AD_LEFT);
+  }
+  
+  /* Display driver Orientation configuration*/
+  if ( getLcdIdCode()==0x8989)
+  {
+    Config.Orientation = GUI_SWAP_XY;
+    GUIDRV_FlexColor_Config(pDevice, &Config);
+  }
+  else if ( getLcdIdCode()==0x9325)
+  {
+    Config.Orientation = GUI_SWAP_XY|GUI_MIRROR_Y;
+    GUIDRV_FlexColor_Config(pDevice, &Config);
+  }  
+  
+  /* Set controller and operation mode*/
   PortAPI.pfWrite16_A0  = LcdWriteReg;
   PortAPI.pfWrite16_A1  = LcdWriteData;
   PortAPI.pfWriteM16_A1 = LcdWriteDataMultiple;
   PortAPI.pfReadM16_A1  = LcdReadDataMultiple;
-  GUIDRV_FlexColor_SetFunc(pDevice, &PortAPI, GUIDRV_FLEXCOLOR_F66702, GUIDRV_FLEXCOLOR_M16C0B16);
+  if ( getLcdIdCode()==0x8989)
+  {
+    GUIDRV_FlexColor_SetFunc(pDevice, &PortAPI, GUIDRV_FLEXCOLOR_F66702, GUIDRV_FLEXCOLOR_M16C0B16);
+  }
+  else if ( getLcdIdCode()==0x9325)
+  {
+      GUIDRV_FlexColor_SetFunc(pDevice, &PortAPI, GUIDRV_FLEXCOLOR_F66708, GUIDRV_FLEXCOLOR_M16C0B16);
+  }
 }
 
 /*********************************************************************
@@ -237,7 +267,6 @@ int LCD_X_DisplayDriver(unsigned LayerIndex, unsigned Cmd, void * pData) {
     // to be adapted by the customer...
     //
     // ...
-    lcd_config();
     return 0;
   }
   default:

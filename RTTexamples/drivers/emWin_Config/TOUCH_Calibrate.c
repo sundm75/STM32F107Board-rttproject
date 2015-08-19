@@ -223,7 +223,7 @@ void Entry_TouchCali(void* parameter)
 void DynamicCali(void)
 {
     rt_thread_t init_thread;
-    init_thread = rt_thread_create("TouchCali", Entry_TouchCali, RT_NULL, 0x1000, 5, 5); 
+    init_thread = rt_thread_create("TouchCali", Entry_TouchCali, RT_NULL, 0x0400, 5, 5); 
     if(init_thread != RT_NULL)
     {
             rt_thread_startup(init_thread);

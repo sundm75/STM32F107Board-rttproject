@@ -3,11 +3,12 @@ FileName: testgui.c
 Author:  孙冬梅       Version :  1.0        Date: 2014.06.04
 Description:    触摸屏驱动测试   
 
-    1.test_gui() ：显示外框，及中间字符 Data:
-    2.startgui()：初始化GUI，清屏
-    3.DynamicCali() ：动态校准函数
-    4.StopCali()：退出动态校准程序
-    5.TouchCali() ：触摸屏校准函数
+    1.test_gui() ：显示外框，及中间字符串。
+    2.startgui()：初始化GUI，清屏 ，执行完该数后，才可分别运行以下函数
+      2.1 DynamicCali() ：动态校准函数
+      2.2 StopCali()：退出动态校准程序
+      2.3 TouchCali() ：触摸屏校准函数
+      2.4 guidemo() : 运行demo函数
 
 Version:         1.0 
 History:         
@@ -44,7 +45,7 @@ void test_gui(void)
     GUI_DispChars('/', 52); 
     GUI_SetFont(&GUI_Font24B_ASCII);
     GUI_SetColor(GUI_RED); 
-    GUI_DispStringAt("Data:",10,110);
+    GUI_DispStringAt("This is a test program!",10,110);
 }
 
 void rt_gui_thread_entry(void* parameter) 
@@ -57,7 +58,7 @@ void rt_gui_thread_entry(void* parameter)
   Timer5Config();
   GUI_Init();
   GUI_Initialized = 1;
-  GUIDEMO_Main();
+  //GUIDEMO_Main();
 }
 
 void startgui(void)
@@ -70,8 +71,15 @@ void startgui(void)
     }
 }
 
+void guidemo(void)
+{
+	GUIDEMO_Main(); 
+}
+
 #ifdef RT_USING_FINSH
 #include <finsh.h>
 FINSH_FUNCTION_EXPORT(test_gui, startup test gui e.g.test_gui());
 FINSH_FUNCTION_EXPORT(startgui, startup startgui);
+FINSH_FUNCTION_EXPORT(guidemo, startup guidemo);
 #endif
+

@@ -86,6 +86,7 @@ s  A2-A0 MODE SER/DFR PD1-PD0
 #define TOUCH_MSR_X     (START | MEASURE_X | MODE_12BIT | DIFFERENTIAL | POWER_MODE0)
 #define TOUCH_MSR_Y     (START | MEASURE_Y | MODE_12BIT | DIFFERENTIAL | POWER_MODE0)
 
+/* 以下定义SSD1289的触摸屏位置
 #if defined(_ILI_HORIZONTAL_DIRECTION_)
 #define MIN_X_DEFAULT   1868
 #define MAX_X_DEFAULT   205
@@ -97,6 +98,21 @@ s  A2-A0 MODE SER/DFR PD1-PD0
 #define MIN_Y_DEFAULT   1868
 #define MAX_Y_DEFAULT   205
 #endif
+*/
+/* 以下定义ili9325的触摸屏位置*/
+#if defined(_ILI_HORIZONTAL_DIRECTION_)
+#define MIN_X_DEFAULT   205
+#define MAX_X_DEFAULT   1868
+#define MIN_Y_DEFAULT   1836
+#define MAX_Y_DEFAULT   176
+#else
+#define MIN_X_DEFAULT   1836
+#define MAX_X_DEFAULT   176
+#define MIN_Y_DEFAULT   205
+#define MAX_Y_DEFAULT   1868
+#endif
+
+
 
 #define SAMP_CNT 8                              //the adc array size
 #define SAMP_CNT_DIV2 4                         //the middle of the adc array

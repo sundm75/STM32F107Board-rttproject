@@ -1983,7 +1983,7 @@
       <name>$PROJ_DIR$\drivers\key.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\drivers\lcd_ssd1289.c</name>
+      <name>$PROJ_DIR$\drivers\lcd.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\drivers\led.c</name>

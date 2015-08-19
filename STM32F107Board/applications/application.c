@@ -96,11 +96,11 @@ void rt_init_thread_entry(void* parameter)
 		/* 触摸屏校准
                 calibration();*/
                                
-		/* 测试触摸屏按钮 及简易计算器
-		ui_button();*/
+		/* 测试触摸屏按钮 及简易计算器*/
+		ui_button();
                                
-                /*运行demo */
-                //application_init();           
+                /*运行demo 
+                application_init();   */        
                 
 	}
 #endif        

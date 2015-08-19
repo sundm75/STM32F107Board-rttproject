@@ -1,5 +1,6 @@
 #include <rtthread.h>
 #include <board.h>
+#include "lcddevice.h"
 
 #ifdef RT_USING_LWIP
 #include "stm32_eth.h"
@@ -181,7 +182,7 @@ void rt_platform_init(void)
     
 #ifdef RT_USING_RTGUI
     /* initilize  lcd controller */
-     ssd1289_init();
+     lcddev_init();
 #endif
     rt_thread_delay(50);
     rt_device_init_all();

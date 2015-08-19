@@ -1,12 +1,13 @@
 本项目为emWin 测试及使用 ，对应说明文档在RTTProject\Documents目录下。
 测试方法：在finsh shell运行test_gui函数。
-    1.test_gui() ：显示外框，及中间字符 Data:
-    2.startgui()：初始化GUI，清屏
-    3.DynamicCali() ：动态校准函数
-    4.StopCali()：退出动态校准程序
-    5.TouchCali() ：触摸屏校准函数
+    1.test_gui() ：显示外框，及中间字符串。
+    2.startgui()：初始化GUI，清屏 ，执行完该数后，才可分别运行以下函数
+		2.1.DynamicCali() ：动态校准函数
+		2.2.StopCali()：退出动态校准程序
+		2.3.TouchCali() ：触摸屏校准函数
+		2.4 guidemo() : 运行demo函数
 	
-	6.重启后运行startgui(),进行demo显示。由于内存不够，不可以同时选择全部的demo, 在GUIDEMO.h 中选择相应的demo
+	3.重启后运行startgui(),进行demo显示时，由于内存不够，不可以同时选择全部的demo, 在GUIDEMO.h 中选择相应的demo
 board.h中，注释掉 RT_USING_SPI3. 
 由于*.a文件不能自动添加，如果采用scons构建IAR工程，需要手工添加STemWin522_CM3_IAR.a文件。MDK建构MDK工程，需要手工添加STemWin522_CM3_Keil.lib。
 本项目采用scons python工具自动生成。

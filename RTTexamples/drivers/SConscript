@@ -16,7 +16,7 @@ if GetDepend('RT_USING_SPI') == False:
 if GetDepend('RT_USING_RTGUI')== False:
     SrcRemove(src, 'calculator.c')
     SrcRemove(src, 'touch_spi.c')
-    SrcRemove(src, 'lcd_ssd1289.c')	
+    SrcRemove(src, 'lcd.c')	
 
 if GetDepend('RT_USING_RF') == False:
 	SrcRemove(src, 'NRF24L01.c')

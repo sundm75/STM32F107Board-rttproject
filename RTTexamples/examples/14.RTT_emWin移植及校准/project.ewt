@@ -284,7 +284,7 @@
       <name>$PROJ_DIR$\..\..\drivers\emWin_Config\GUIConf.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\drivers\emWin_Config\lcd_ssd1289.c</name>
+      <name>$PROJ_DIR$\..\..\drivers\emWin_Config\lcd.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\drivers\emWin_Config\LCDConf.c</name>

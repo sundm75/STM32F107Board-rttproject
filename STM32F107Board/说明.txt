@@ -6,7 +6,7 @@ demo运行需要中文字库，必须将SDCard中的所有拷备入SD卡后插入开发板。
 4.creatEWARMproject.bat creatMDKARMproject.bat分别为创建IAR工程和MDK工程的批处理文件
 5.killEWARMobj.bat killMDKARMobj.bat分别为删除IAR工程和MDK工程中目标文件的批处理文件，用于工程文件夹减肥用。
 二、
-具体用scons python生成工程，及编译工程，请参考rtthread网站手册。 
+具体用scons python生成工程，及编译工程，请参考rtthread网站手册。
 
 三、
 本工程初始使用时，需要修改

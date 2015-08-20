@@ -8,6 +8,7 @@
 		2.4 guidemo() : 运行demo函数
 	
 	3.重启后运行startgui(),进行demo显示时，由于内存不够，不可以同时选择全部的demo, 在GUIDEMO.h 中选择相应的demo
+	4.LCDConf.c 中定义了SSD1289  和 ili9325 的触摸屏位置 配置宏，自动 选择。
 board.h中，注释掉 RT_USING_SPI3. 
 由于*.a文件不能自动添加，如果采用scons构建IAR工程，需要手工添加STemWin522_CM3_IAR.a文件。MDK建构MDK工程，需要手工添加STemWin522_CM3_Keil.lib。
 本项目采用scons python工具自动生成。

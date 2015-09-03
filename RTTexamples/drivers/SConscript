@@ -22,6 +22,7 @@ if GetDepend('RT_USING_RF') == False:
 	SrcRemove(src, 'NRF24L01.c')
 	SrcRemove(src, 'NRF24L012.c')
 	SrcRemove(src, 'rfspi.c')
+	SrcRemove(src, 'rt_stm32f10x_spi.c')
 	
 CPPPATH = [cwd]
 

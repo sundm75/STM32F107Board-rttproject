@@ -58,7 +58,7 @@
 /* SECTION: Device System */
 /* Using Device System */
 #define RT_USING_DEVICE
-#define RT_USING_SPI
+//#define RT_USING_SPI
 #define RT_USING_RF
 
 

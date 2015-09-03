@@ -184,7 +184,7 @@ void LCD_X_Config(void) {
   {
       pDevice = GUI_DEVICE_CreateAndLink(GUIDRV_FLEXCOLOR, GUICC_M565, 0, 0);
   }
-  else if ( getLcdIdCode()==0x9325)
+  else if (( getLcdIdCode()==0x9325)||( getLcdIdCode()==0x9320))
   {
       pDevice = GUI_DEVICE_CreateAndLink(GUIDRV_FLEXCOLOR, GUICC_565, 0, 0);
   }
@@ -199,7 +199,7 @@ void LCD_X_Config(void) {
     GUI_TOUCH_Calibrate(GUI_COORD_X, 0, 240, TOUCH_AD_TOP, TOUCH_AD_BOTTOM);
     GUI_TOUCH_Calibrate(GUI_COORD_Y, 0, 320, TOUCH_AD_LEFT, TOUCH_AD_RIGHT);
   }
-  else if ( getLcdIdCode()==0x9325)
+  else if (( getLcdIdCode()==0x9325)||( getLcdIdCode()==0x9320))
   {
     GUI_TOUCH_Calibrate(GUI_COORD_X, 0, 240, TOUCH_AD_BOTTOM, TOUCH_AD_TOP);
     GUI_TOUCH_Calibrate(GUI_COORD_Y, 0, 320, TOUCH_AD_RIGHT, TOUCH_AD_LEFT);
@@ -211,7 +211,7 @@ void LCD_X_Config(void) {
     Config.Orientation = GUI_SWAP_XY;
     GUIDRV_FlexColor_Config(pDevice, &Config);
   }
-  else if ( getLcdIdCode()==0x9325)
+  else if (( getLcdIdCode()==0x9325)||( getLcdIdCode()==0x9320))
   {
     Config.Orientation = GUI_SWAP_XY|GUI_MIRROR_Y;
     GUIDRV_FlexColor_Config(pDevice, &Config);
@@ -226,7 +226,7 @@ void LCD_X_Config(void) {
   {
     GUIDRV_FlexColor_SetFunc(pDevice, &PortAPI, GUIDRV_FLEXCOLOR_F66702, GUIDRV_FLEXCOLOR_M16C0B16);
   }
-  else if ( getLcdIdCode()==0x9325)
+  else if (( getLcdIdCode()==0x9325)||( getLcdIdCode()==0x9320))
   {
       GUIDRV_FlexColor_SetFunc(pDevice, &PortAPI, GUIDRV_FLEXCOLOR_F66708, GUIDRV_FLEXCOLOR_M16C0B16);
   }

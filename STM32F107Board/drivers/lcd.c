@@ -681,7 +681,7 @@ void rt_hw_lcd_draw_hline(const char* c, int x1, int x2, int y)
     lcd_write_reg(0x0011,0x6070 | (0<<3)); // AM=0 hline
 #endif
     }
-    if(DeviceIdCode==0x9325)
+    if((DeviceIdCode==0x9325)||(DeviceIdCode==0x9320))
     {
 #if defined(_ILI_REVERSE_DIRECTION_)
     /* [5:4]-ID~ID0 [3]-AM- 1垂直 0-水平 */
@@ -716,7 +716,7 @@ void rt_hw_lcd_draw_vline(const char* c, int x, int y1, int y2)
     lcd_write_reg(0x0011,0x6070 | (1<<3)); // AM=1 vline
 #endif
     }
-    if(DeviceIdCode==0x9325)
+    if((DeviceIdCode==0x9325)||(DeviceIdCode==0x9320))
     {
     /* [5:4]-ID~ID0 [3]-AM- 1垂直 0-水平 */
 #if defined(_ILI_REVERSE_DIRECTION_)
@@ -749,7 +749,7 @@ void rt_hw_lcd_draw_blit_line(const char* c, int x, int y, rt_size_t size)
     lcd_write_reg(0x0011,0x6070 | (0<<3)); // AM=0 hline
 #endif
     }
-    if(DeviceIdCode==0x9325)
+    if((DeviceIdCode==0x9325)||(DeviceIdCode==0x9320))
     {
 #if defined(_ILI_REVERSE_DIRECTION_)
     /* [5:4]-ID~ID0 [3]-AM- 1垂直 0-水平*/

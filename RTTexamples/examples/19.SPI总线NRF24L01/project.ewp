@@ -307,7 +307,6 @@
           <state>$PROJ_DIR$\..\..\..\RT-Thread_1.2.1\components\CMSIS\Include</state>
           <state>$PROJ_DIR$\..\..\..\RT-Thread_1.2.1\components\finsh</state>
           <state>$PROJ_DIR$\..\..\..\RT-Thread_1.2.1\libcpu\arm\common</state>
-          <state>$PROJ_DIR$\..\..\..\RT-Thread_1.2.1\components\drivers\include</state>
           <state>$PROJ_DIR$\.</state>
           <state>$PROJ_DIR$\applications</state>
           <state>$PROJ_DIR$\..\..\..\RT-Thread_1.2.1\libcpu\arm\cortex-m3</state>
@@ -1261,7 +1260,6 @@
           <state>$PROJ_DIR$\..\..\..\RT-Thread_1.2.1\components\CMSIS\Include</state>
           <state>$PROJ_DIR$\..\..\..\RT-Thread_1.2.1\components\finsh</state>
           <state>$PROJ_DIR$\..\..\..\RT-Thread_1.2.1\libcpu\arm\common</state>
-          <state>$PROJ_DIR$\..\..\..\RT-Thread_1.2.1\components\drivers\include</state>
           <state>$PROJ_DIR$\.</state>
           <state>$PROJ_DIR$\applications</state>
           <state>$PROJ_DIR$\..\..\..\RT-Thread_1.2.1\libcpu\arm\cortex-m3</state>
@@ -1980,9 +1978,6 @@
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\drivers\led.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\drivers\msd.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\drivers\NRF24L01.c</name>

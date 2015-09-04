@@ -242,9 +242,6 @@
       <name>$PROJ_DIR$\..\..\drivers\led.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\drivers\msd.c</name>
-    </file>
-    <file>
       <name>$PROJ_DIR$\..\..\drivers\NRF24L01.c</name>
     </file>
     <file>

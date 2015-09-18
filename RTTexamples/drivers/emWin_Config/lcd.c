@@ -78,7 +78,7 @@ unsigned long const LCD_POW10[10] =
   100000, 1000000, 10000000, 100000000, 1000000000
 };
 
-/*LCD模块类型定义 0x0：ili9320 0x8989：SSD1289 0x9325：ili9325*/
+/*LCD模块类型定义 0x9320：ili9320 0x8989：SSD1289 0x9325：ili9325*/
 static u16 DeviceIdCode;
 
 void lcd_delay(int n)

@@ -147,7 +147,7 @@
         </option>
         <option>
           <name>OGUseCmsis</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>OGUseCmsisDspLib</name>
@@ -300,24 +300,25 @@
         <option>
           <name>CCIncludePath2</name>
           <state></state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\libcpu\arm\cortex-m3</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\include\netif</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\libcpu\arm\common</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\dfs\include</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\libcpu\arm\cortex-m3</state>
           <state>$PROJ_DIR$\Libraries\STM32F10x_StdPeriph_Driver\inc</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\finsh</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\include</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\dfs\filesystems\elmfat</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\drivers\include</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\arch\include</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\include\ipv4</state>
           <state>$PROJ_DIR$\drivers</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\dfs</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\CMSIS\Include</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\drivers\spi</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\include</state>
           <state>$PROJ_DIR$\.</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\CMSIS\Include</state>
           <state>$PROJ_DIR$\applications</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\include\ipv4</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\include</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\dfs\include</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\arch\include</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\drivers\include</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\include</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\rtgui\include</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\include</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\include\netif</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\finsh</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\libcpu\arm\common</state>
           <state>$PROJ_DIR$\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x</state>
         </option>
         <option>
@@ -606,15 +607,15 @@
         <option>
           <name>OOCOutputFormat</name>
           <version>2</version>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>OCOutputOverride</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>OOCOutputFile</name>
-          <state>project.hex</state>
+          <state></state>
         </option>
         <option>
           <name>OOCCommandLineProducer</name>
@@ -622,7 +623,7 @@
         </option>
         <option>
           <name>OOCObjCopyEnable</name>
-          <state>1</state>
+          <state>0</state>
         </option>
       </data>
     </settings>
@@ -1049,7 +1050,7 @@
         </option>
         <option>
           <name>OGLastSavedByProductVersion</name>
-          <state>6.70.1.5793</state>
+          <state>7.20.2.7418</state>
         </option>
         <option>
           <name>GeneralEnableMisra</name>
@@ -1262,24 +1263,25 @@
         <option>
           <name>CCIncludePath2</name>
           <state></state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\libcpu\arm\cortex-m3</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\include\netif</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\libcpu\arm\common</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\dfs\include</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\libcpu\arm\cortex-m3</state>
           <state>$PROJ_DIR$\Libraries\STM32F10x_StdPeriph_Driver\inc</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\finsh</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\include</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\dfs\filesystems\elmfat</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\drivers\include</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\arch\include</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\include\ipv4</state>
           <state>$PROJ_DIR$\drivers</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\dfs</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\CMSIS\Include</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\drivers\spi</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\include</state>
           <state>$PROJ_DIR$\.</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\CMSIS\Include</state>
           <state>$PROJ_DIR$\applications</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\include\ipv4</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\include</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\dfs\include</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\arch\include</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\drivers\include</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src</state>
-          <state>$PROJ_DIR$\..\RT-Thread_1.2.1\include</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\rtgui\include</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\include</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\include\netif</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\components\finsh</state>
+          <state>$PROJ_DIR$\..\RT-THREAD\libcpu\arm\common</state>
           <state>$PROJ_DIR$\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x</state>
         </option>
         <option>
@@ -1944,28 +1946,28 @@
   <group>
     <name>CORTEX-M3</name>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\libcpu\arm\common\backtrace.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\libcpu\arm\common\backtrace.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\libcpu\arm\cortex-m3\context_iar.S</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\libcpu\arm\cortex-m3\context_iar.S</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\libcpu\arm\cortex-m3\cpuport.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\libcpu\arm\cortex-m3\cpuport.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\libcpu\arm\common\div0.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\libcpu\arm\common\div0.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\libcpu\arm\common\showmem.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\libcpu\arm\common\showmem.c</name>
     </file>
   </group>
   <group>
     <name>DeviceDrivers</name>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\drivers\spi\spi_core.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\drivers\spi\spi_core.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\drivers\spi\spi_dev.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\drivers\spi\spi_dev.c</name>
     </file>
   </group>
   <group>
@@ -2016,64 +2018,64 @@
   <group>
     <name>Filesystem</name>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\dfs\src\dfs.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\dfs\src\dfs.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\dfs\filesystems\elmfat\dfs_elm.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\dfs\filesystems\elmfat\dfs_elm.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\dfs\src\dfs_file.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\dfs\src\dfs_file.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\dfs\src\dfs_fs.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\dfs\src\dfs_fs.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\dfs\src\dfs_posix.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\dfs\src\dfs_posix.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\dfs\filesystems\elmfat\ff.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\dfs\filesystems\elmfat\ff.c</name>
     </file>
   </group>
   <group>
     <name>finsh</name>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\finsh\cmd.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\finsh\cmd.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\finsh\finsh_compiler.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\finsh\finsh_compiler.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\finsh\finsh_error.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\finsh\finsh_error.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\finsh\finsh_heap.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\finsh\finsh_heap.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\finsh\finsh_init.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\finsh\finsh_init.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\finsh\finsh_node.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\finsh\finsh_node.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\finsh\finsh_ops.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\finsh\finsh_ops.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\finsh\finsh_parser.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\finsh\finsh_parser.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\finsh\finsh_token.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\finsh\finsh_token.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\finsh\finsh_var.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\finsh\finsh_var.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\finsh\finsh_vm.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\finsh\finsh_vm.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\finsh\shell.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\finsh\shell.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\finsh\symbol.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\finsh\symbol.c</name>
     </file>
   </group>
   <group>
@@ -2082,457 +2084,457 @@
       <configuration>Debug</configuration>
     </excluded>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_application.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_application.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_plot.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_plot.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_animation.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_animation.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_benchmark.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_benchmark.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_bmp.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_bmp.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_box.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_box.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_buffer_animation.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_buffer_animation.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_button.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_button.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_checkbox.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_checkbox.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_combobox.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_combobox.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_dc.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_dc.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_dc_buffer.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_dc_buffer.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_digtube.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_digtube.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_edit.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_edit.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_instrument_panel.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_instrument_panel.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_label.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_label.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_listbox.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_listbox.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_listctrl.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_listctrl.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_menu.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_menu.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_mywidget.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_mywidget.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_notebook.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_notebook.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_progressbar.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_progressbar.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_radiobox.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_radiobox.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_scrollbar.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_scrollbar.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_slider.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_slider.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_textbox.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_textbox.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_ttf.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_ttf.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_view_window.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_view_window.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\demo_xml.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\demo_xml.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\guiexamples\examples\mywidget.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\guiexamples\examples\mywidget.c</name>
     </file>
   </group>
   <group>
     <name>Kernel</name>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\src\clock.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\src\clock.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\src\device.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\src\device.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\src\idle.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\src\idle.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\src\ipc.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\src\ipc.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\src\irq.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\src\irq.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\src\kservice.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\src\kservice.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\src\mem.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\src\mem.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\src\mempool.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\src\mempool.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\src\object.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\src\object.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\src\scheduler.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\src\scheduler.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\src\thread.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\src\thread.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\src\timer.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\src\timer.c</name>
     </file>
   </group>
   <group>
     <name>LwIP</name>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\api\api_lib.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\api\api_lib.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\api\api_msg.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\api\api_msg.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\ipv4\autoip.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\ipv4\autoip.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\def.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\def.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\dhcp.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\dhcp.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\dns.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\dns.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\api\err.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\api\err.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\netif\etharp.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\netif\etharp.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\netif\ethernetif.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\netif\ethernetif.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\ipv4\icmp.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\ipv4\icmp.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\ipv4\igmp.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\ipv4\igmp.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\ipv4\inet.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\ipv4\inet.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\ipv4\inet_chksum.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\ipv4\inet_chksum.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\init.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\init.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\ipv4\ip.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\ipv4\ip.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\ipv4\ip_addr.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\ipv4\ip_addr.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\ipv4\ip_frag.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\ipv4\ip_frag.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\memp.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\memp.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\api\netbuf.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\api\netbuf.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\api\netdb.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\api\netdb.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\netif.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\netif.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\api\netifapi.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\api\netifapi.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\pbuf.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\pbuf.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\raw.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\raw.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\netif\slipif.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\netif\slipif.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\api\sockets.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\api\sockets.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\stats.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\stats.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\sys.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\sys.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\arch\sys_arch.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\arch\sys_arch.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\tcp.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\tcp.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\tcp_in.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\tcp_in.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\tcp_out.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\tcp_out.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\api\tcpip.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\api\tcpip.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\timers.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\timers.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\net\lwip-1.4.1\src\core\udp.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\net\lwip-1.4.1\src\core\udp.c</name>
     </file>
   </group>
   <group>
     <name>RTGUI</name>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\asc12font.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\asc12font.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\asc16font.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\asc16font.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\blit.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\blit.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\box.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\box.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\button.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\button.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\apps\calibration.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\apps\calibration.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\checkbox.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\checkbox.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\color.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\color.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\combobox.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\combobox.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\container.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\container.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\dc.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\dc.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\dc_blend.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\dc_blend.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\dc_buffer.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\dc_buffer.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\dc_client.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\dc_client.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\dc_hw.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\dc_hw.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\digfont.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\digfont.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\digtube.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\digtube.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\server\driver.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\server\driver.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\edit.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\edit.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\filelist_view.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\filelist_view.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\filerw.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\filerw.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\font.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\font.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\font_bmp.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\font_bmp.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\font_fnt.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\font_fnt.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\font_freetype.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\font_freetype.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\font_hz_bmp.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\font_hz_bmp.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\font_hz_file.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\font_hz_file.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\framebuffer_driver.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\framebuffer_driver.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\groupbox.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\groupbox.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\hz12font.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\hz12font.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\hz16font.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\hz16font.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\iconbox.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\iconbox.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\image.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\image.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\image_bmp.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\image_bmp.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\image_container.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\image_container.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\image_hdc.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\image_hdc.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\image_jpg.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\image_jpg.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\image_png.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\image_png.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\image_xpm.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\image_xpm.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\label.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\label.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\list_view.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\list_view.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\listbox.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\listbox.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\listctrl.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\listctrl.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\menu.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\menu.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\server\mouse.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\server\mouse.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\mv_view.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\mv_view.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\notebook.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\notebook.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\panel.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\panel.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\pixel_driver.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\pixel_driver.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\plot.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\plot.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\plot_curve.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\plot_curve.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\progressbar.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\progressbar.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\radiobox.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\radiobox.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\region.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\region.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\rtgui_app.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\rtgui_app.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\rtgui_mv_model.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\rtgui_mv_model.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\rtgui_object.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\rtgui_object.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\rtgui_system.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\rtgui_system.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\rtgui_theme.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\rtgui_theme.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\common\rtgui_xml.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\common\rtgui_xml.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\scrollbar.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\scrollbar.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\server\server.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\server\server.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\slider.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\slider.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\staticline.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\staticline.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\textbox.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\textbox.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\textview.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\textview.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\title.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\title.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\server\topwin.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\server\topwin.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\widget.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\widget.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\RT-Thread_1.2.1\components\rtgui\widgets\window.c</name>
+      <name>$PROJ_DIR$\..\RT-THREAD\components\rtgui\widgets\window.c</name>
     </file>
   </group>
   <group>

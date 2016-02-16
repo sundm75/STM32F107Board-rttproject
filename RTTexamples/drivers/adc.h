@@ -10,5 +10,8 @@ History:
 #include "stm32f10x.h"
 
 void ADC_Config(void);
-void getadcvalue(uint16_t *advalue);
+void getadcvalue(void);
+
+void ADCTEMP_Config(void) ;
+void gettemperature(void) ;
 #endif

@@ -144,7 +144,7 @@ void USART1_IRQHandler(void)
 * Output         : None
 * Return         : None
 *******************************************************************************/
-/*void USART2_IRQHandler(void)
+/**/void USART2_IRQHandler(void)
 {
 #ifdef RT_USING_UART2
     extern struct rt_device uart2_device;
@@ -159,14 +159,14 @@ void USART1_IRQHandler(void)
     rt_interrupt_leave();
 #endif
 }
-*/
+
 /*******************************************************************************
 * Function Name  : USART3_IRQHandler
 * Description    : This function handles USART3 global interrupt request.
 * Input          : None
 * Output         : None
 * Return         : None
-******************************************************************************
+*******************************************************************************/
  void USART3_IRQHandler(void)
 {
 #ifdef RT_USING_UART3
@@ -181,7 +181,7 @@ void USART1_IRQHandler(void)
     // leave interrupt 
     rt_interrupt_leave();
 #endif
-}*/
+}
 
 /**
   * @}

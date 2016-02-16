@@ -551,7 +551,8 @@ rt_err_t rtgui_touch_hw_init(const char * spi_device_name)
                                     touch_thread_entry, RT_NULL,
                                     1024, RTGUI_SVR_THREAD_PRIORITY-1, 1);
     if (touch_thread != RT_NULL) rt_thread_startup(touch_thread);
-
+    
+    rt_device_init((rt_device_t)touch);
     return RT_EOK;
 }
 

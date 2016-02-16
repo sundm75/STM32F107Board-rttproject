@@ -374,7 +374,7 @@ void clear_buf_uart(void)
 
 /*******************************************************************************
 * Function Name  : dmarevsend DMA测试函数
-* Description    : usart2接收数据后，usart1打印出来,用于测试
+* Description    : usart3接收数据后，usart1打印出来,用于测试
 * Input          : None
 * Output         : None
 * Return         : None

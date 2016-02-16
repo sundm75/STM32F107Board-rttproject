@@ -12,7 +12,6 @@ History:
 
 #include <rtthread.h>
 #include "adc.h"
-#include "ADC_Temperature.h"
 #include  <finsh.h> 
 
 /*******************************************************************************
@@ -24,11 +23,16 @@ History:
 *******************************************************************************/
 void test_adc (void)
 {
-  uint16_t advalue[100];
   ADC_Config();
-  getadcvalue(advalue);
-  TemperatureConfig();
-  GetTemperature(); 
+  getadcvalue();
+  ADCTEMP_Config();
+  gettemperature(); 
 }
 
-FINSH_FUNCTION_EXPORT(test_adc, startup adc convert e.g. test_adc());
+
+#ifdef  RT_USING_FINSH 
+  #include  <finsh.h> 
+  FINSH_FUNCTION_EXPORT(test_adc, startup adc convert e.g. test_adc());
+  FINSH_FUNCTION_EXPORT(getadcvalue, startup adc convert e.g. getadcvalue());
+  FINSH_FUNCTION_EXPORT(gettemperature, startup temperature convert e.g. gettemperature());
+#endif

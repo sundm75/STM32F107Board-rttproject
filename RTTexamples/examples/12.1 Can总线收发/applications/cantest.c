@@ -19,5 +19,11 @@ void test_can()
   can2send("abcd",4); 
 }
 
+/*----------------------------------“‘œ¬≤‚ ‘∫Ø ˝------------------------------*/
+#ifdef  RT_USING_FINSH 
+#include "finsh.h"
+FINSH_FUNCTION_EXPORT (can1send,  can1send("123",3)); 
+FINSH_FUNCTION_EXPORT (can2send,  can2send("abcd",4)); 
 FINSH_FUNCTION_EXPORT(test_can, can system test e.g. test_can());
+#endif
 

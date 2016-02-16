@@ -3,8 +3,7 @@
 rd .\Debug /s /q
 rd .\settings /s /q
 del /Q *.dep
-del /Q *.ewd
-
+::del /Q *.ewd
 exit
 
 @echo off

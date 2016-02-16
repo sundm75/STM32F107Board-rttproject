@@ -1,7 +1,7 @@
 /*********************2011-2012, NJUT, Edu. 
   FileName: modbus.c 
   Author:  孙冬梅       Version :  1.0        Date: 2012.11.25
-  Description:     modbus协议主节点发送，接收解析 用于407      
+  Description:     modbus协议主节点发送，接收解析 用于107      
   Version:         1.0 
   Function List:    
     1. MODBUS 03功能号，读多个寄存器 

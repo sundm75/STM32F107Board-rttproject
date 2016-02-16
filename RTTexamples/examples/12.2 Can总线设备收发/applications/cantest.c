@@ -11,7 +11,7 @@ History:
 
 #include <rtthread.h>
 #include <candevice.h>
-
+#include "can.h"
 /* can接收消息结构*/
 struct rx_msg
 {
@@ -84,8 +84,10 @@ void device_thread_entry(void* parameter)
 
 void test_candevice()
 {
+  extern void rt_hw_can_init(void);
+  rt_hw_can_init();
   /* 创建devt线程*/
-  rt_thread_t thread = rt_thread_create("devt",
+  rt_thread_t thread = rt_thread_create("candev",
   device_thread_entry, RT_NULL,
   1024, 25, 7);
   
@@ -99,4 +101,6 @@ void test_candevice()
  #include  <finsh.h> 
  /*  输出函数到finsh  shell中 */ 
 FINSH_FUNCTION_EXPORT(test_candevice, device test e.g.test_candevice());
+FINSH_FUNCTION_EXPORT (can1send,  can1send("123",3)); 
+FINSH_FUNCTION_EXPORT (can2send,  can2send("abcd",4)); 
 #endif

@@ -1,6 +1,12 @@
 本项目为19.SPI总线NRF24L01 ，对应说明文档在RTTProject\Documents目录下。
 测试方法：
-1.在rtconfig.h中定义：#define RT_USING_RF 且注释掉：//  RT_USING_LWIP RT_USING_GUI RT_USING_DFS
+1.在rtconfig.h中定义：#define RT_USING_RF 且注释掉：
+//  RT_USING_LWIP 
+// RT_USING_GUI RT_USING_DFS 
+SPI3初始化时应该注意重映射，PC10 11 12是要重映射到SPI3上的。所以不能使用 uart2和uart3
+//#define RT_USING_UART2
+//#define RT_USING_UART3
+
 2.在finsh shell运行rf1start()函数,初始化rf1模块。
 3.在finsh shell运行rf2start()函数,初始化rf2模块。
 4.在finsh shell运行rf1send("123")函数,从rf1模块发射字符串“123”（字符串可自行改，32个以内）。在finsh中能观察到rf2接收到字符。
@@ -17,7 +23,4 @@
 
 三、
 本工程初始使用时，需要修改
-MDK：options->debug->setting->FlashDownload 标签页中添加 STM32F10x Connectiovity Line Flash ; Options->Target->标签页中 勾选Use MicroLIB 
-IAR: options->Debugger->Setup->Driver->中添加 J-Link/J-Trace
-
-勾选microlib，由于其提供一个有限的stdio子系统，它仅支持未缓冲的stdin,stdout和stderr.这样即可使用printf()来显示应用程序中的诊断消息.如不选择，程序无法正常运行。
+MDK：options->debug->setting->FlashDownload 标签页中添加 STM32F10x Connectiovity Line Flash。

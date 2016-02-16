@@ -25,8 +25,8 @@ History:
 /* Private variables ---------------------------------------------------------*/
 extern __IO uint32_t TimingDelay;
 
-#define  sFLASH_ID       0xEF4016
-#define  sDevice_ID		0x000015
+#define  sFLASH_ID       0xEF3015
+#define  sDevice_ID		0x000014
 
 #define  BufferSize (countof(Tx_Buffer)-1)
 

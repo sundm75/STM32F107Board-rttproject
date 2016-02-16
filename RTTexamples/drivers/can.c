@@ -20,7 +20,15 @@ History:
   *          +-----------------------------+-----------------------------+
 ******************************************************************************/ 
 #include "can.h"
+#include "candevice.h"
 
+struct stm32_can_int_rx can1_int_rx;
+struct stm32_can_device can1 =
+{
+	CAN1,
+	&can1_int_rx,
+};
+struct rt_device can1_device;
 
 CanRxMsg RxMessage;
 CanTxMsg TxMessage;
@@ -196,9 +204,9 @@ void Init_TxMes(CanTxMsg *TxMessage)
 *******************************************************************************/
 void CAN1_RX0_IRQHandler(void)
 {
-  
-	int i;
-	CAN_Receive(CAN1, CAN_FIFO0, &RxMessage);
+  /*
+  int i;
+  CAN_Receive(CAN1, CAN_FIFO0, &RxMessage);
   if ((RxMessage.StdId == 0x321)&&(RxMessage.IDE == CAN_ID_STD))
   {
     rt_kprintf("\r\ncan1 receive:");
@@ -208,6 +216,16 @@ void CAN1_RX0_IRQHandler(void)
     }
     rt_kprintf("\r\n");
   }
+  */
+    extern void rt_hw_can_isr(struct rt_device *device);
+
+    // enter interrupt 
+    rt_interrupt_enter();
+
+    rt_hw_can_isr(&can1_device);
+
+    // leave interrupt 
+    rt_interrupt_leave();
 }
 
 /*******************************************************************************
@@ -282,7 +300,7 @@ void can1send(uint8_t* data,uint8_t number)
 void can2send(uint8_t* data,uint8_t number)
 {
   int i;
-	TxMessage.StdId = 0x321;
+  TxMessage.StdId = 0x321;
   TxMessage.ExtId = 0x01;
   TxMessage.RTR = CAN_RTR_DATA;//数据帧
   TxMessage.IDE = CAN_ID_STD;//标准标识符 11位
@@ -294,4 +312,24 @@ void can2send(uint8_t* data,uint8_t number)
   CAN_Transmit(CAN2, &TxMessage);
 }
 
-
+/*******************************************************************************
+* Function Name  : caninit
+* Description    : 初始化 can 全过程
+* Input          : bps-can的波特率(单位为K，数量为25000的整数倍) 
+                    如：25000;50000;500000;1000000
+                   addr-can设备的地址 接收屏蔽用
+* Output         : None
+* Return         : None
+*******************************************************************************/
+void caninit(void)
+{
+  canconfig();
+  
+}
+void rt_hw_can_init(void)
+{
+  caninit();
+  rt_hw_can_register(&can1_device, "can1",
+          RT_DEVICE_FLAG_RDWR | RT_DEVICE_FLAG_INT_RX | RT_DEVICE_FLAG_STREAM,
+          &can1);
+}

@@ -9,7 +9,4 @@
 
 三、
 本工程初始使用时，需要修改
-MDK：options->debug->setting->FlashDownload 标签页中添加 STM32F10x Connectiovity Line Flash ; Options->Target->标签页中 勾选Use MicroLIB 
-IAR: options->Debugger->Setup->Driver->中添加 J-Link/J-Trace
-
-勾选microlib，由于其提供一个有限的stdio子系统，它仅支持未缓冲的stdin,stdout和stderr.这样即可使用printf()来显示应用程序中的诊断消息.如不选择，程序无法正常运行。
+MDK：options->debug->setting->FlashDownload 标签页中添加 STM32F10x Connectiovity Line Flash 

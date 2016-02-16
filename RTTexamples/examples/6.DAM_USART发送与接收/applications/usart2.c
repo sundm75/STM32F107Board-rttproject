@@ -329,7 +329,7 @@ void USART2_IRQHandler(void)
 }
 
 /*******************************************************************************
-* Function Name  : testdma
+* Function Name  : test_usart2
 * Description    : 实现串口收到后，再从自己的串口发出
 * Input          : None
 * Output         : None

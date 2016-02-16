@@ -22,3 +22,5 @@ void test_rtc(char* timestring)
 
 #include "finsh.h"
 FINSH_FUNCTION_EXPORT (test_rtc ,  startup RTCConfig and Display time e.g. test_rtc("2013073012030502")); 
+FINSH_FUNCTION_EXPORT (RTCConfig ,  startup RTCConfig and Display time e.g. RTCConfig("2013073012030502",0)); 
+FINSH_FUNCTION_EXPORT (Time_Display ,  startup Display time e.g. Time_Display("")); 

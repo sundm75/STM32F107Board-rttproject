@@ -607,15 +607,15 @@
         <option>
           <name>OOCOutputFormat</name>
           <version>2</version>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>OCOutputOverride</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>OOCOutputFile</name>
-          <state></state>
+          <state>&#x5F00;&#x53D1;&#x677F;&#x56FA;&#x4eF6;.hex</state>
         </option>
         <option>
           <name>OOCCommandLineProducer</name>
@@ -623,7 +623,7 @@
         </option>
         <option>
           <name>OOCObjCopyEnable</name>
-          <state>0</state>
+          <state>1</state>
         </option>
       </data>
     </settings>

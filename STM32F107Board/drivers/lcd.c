@@ -147,6 +147,7 @@ void lcd_config(void)
         //printf("DeviceIdCode = 0X%X \n", DeviceIdCode);
         if(DeviceIdCode==0x8989)//SSD1289
         {
+          rt_kprintf("LCD DeviceIdCode = 0x8989!\n");
           /** 执行上电流程 */
           lcd_write_reg(0x0003,0xA8A4);		
           lcd_write_reg(0x000C,0x0000);        
@@ -200,6 +201,7 @@ void lcd_config(void)
         }
         else if(DeviceIdCode==0x9325)//ili9325 
         {
+          rt_kprintf("LCD DeviceIdCode = 0x9325!\n");
           /* time control*/
           lcd_write_reg(0x00e3,0x3008);   // Set internal timing
           lcd_write_reg(0x00e7,0x0012);
@@ -270,6 +272,7 @@ void lcd_config(void)
         }
         else if(DeviceIdCode==0x9320)//ili9320
         {
+          rt_kprintf("LCD DeviceIdCode = 0x9320!\n");
 		lcd_write_reg(0x00,0x0000);
 		lcd_write_reg(0x01,0x0100);	//Driver Output Contral.
 		lcd_write_reg(0x02,0x0700);	//LCD Driver Waveform Contral.

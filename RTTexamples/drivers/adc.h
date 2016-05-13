@@ -14,4 +14,8 @@ void getadcvalue(void);
 
 void ADCTEMP_Config(void) ;
 void gettemperature(void) ;
+
+void ADC_Mul_Config(void);
+void getmuladcvalue(void);
+
 #endif

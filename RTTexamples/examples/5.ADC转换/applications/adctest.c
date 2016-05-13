@@ -16,7 +16,7 @@ History:
 
 /*******************************************************************************
 * Function Name  : test_adc
-* Description    : adc.C ADC_Temperature.c Çý¶¯²âÊÔº¯Êý
+* Description    : adc.C  Çý¶¯²âÊÔº¯Êý
 * Input          : None
 * Output         : None
 * Return         : None
@@ -25,8 +25,13 @@ void test_adc (void)
 {
   ADC_Config();
   getadcvalue();
+  
   ADCTEMP_Config();
   gettemperature(); 
+  
+  ADC_Mul_Config();
+  getmuladcvalue(); 
+  
 }
 
 

@@ -1,0 +1,23 @@
+本工程为多路数据采集项目 放到 E:\RTT_Git\RTTProject\RTTexamples\examples 目录下运行
+1.硬件为STM32F107Board 
+2.使用LCD实时显示当前RES、AI1 AI2的数据
+3. board.h中 打开 编译开关 //#define RT_USING_UART2 
+4. uart.c中 ，	下列代码中，注释掉 RT_DEVICE_FLAG_STREAM
+rt_hw_serial_register(&uart2_device, "uart2",
+		RT_DEVICE_FLAG_RDWR | RT_DEVICE_FLAG_INT_RX | RT_DEVICE_FLAG_STREAM,
+		&uart2);
+		
+5. 将三个宏置为0
+
+#ifndef   SHOW_GUIDEMO_BITMAP
+  #define SHOW_GUIDEMO_BITMAP            (1)
+#endif
+
+#ifndef   SHOW_GUIDEMO_COLORBAR
+  #define SHOW_GUIDEMO_COLORBAR          (1)
+#endif
+
+#ifndef   SHOW_GUIDEMO_CURSOR
+  #define SHOW_GUIDEMO_CURSOR            (1)
+#endif
+

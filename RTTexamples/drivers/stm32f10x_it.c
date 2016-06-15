@@ -144,9 +144,9 @@ void USART1_IRQHandler(void)
 * Output         : None
 * Return         : None
 *******************************************************************************/
+#ifdef RT_USING_UART2
 /**/void USART2_IRQHandler(void)
 {
-#ifdef RT_USING_UART2
     extern struct rt_device uart2_device;
 	extern void rt_hw_serial_isr(struct rt_device *device);
 
@@ -157,8 +157,8 @@ void USART1_IRQHandler(void)
 
     // leave interrupt 
     rt_interrupt_leave();
-#endif
 }
+#endif
 
 /*******************************************************************************
 * Function Name  : USART3_IRQHandler

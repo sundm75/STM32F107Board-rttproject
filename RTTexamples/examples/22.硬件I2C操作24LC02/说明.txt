@@ -1,0 +1,13 @@
+本项目为第一个RTT项目，能够实现LED灯闪烁，KEY控制LED灯，串口监视，TCPIP网络连接，finsh功能，对应说明文档在RTTProject\Documents目录下。
+测试方法：在finsh shell运行 test_i2c_ee 函数。
+本项目采用scons python工具自动生成。
+一、
+1.project.eww为IAR工程项目，project.uvproj为MDK工程项目
+2.creatEWARMproject.bat creatMDKARMproject.bat分别为创建IAR工程和MDK工程的批处理文件
+3.killEWARMobj.bat killMDKARMobj.bat分别为删除IAR工程和MDK工程中目标文件的批处理文件，用于工程文件夹减肥用。
+二、
+具体用scons python生成工程，及编译工程，请参考rtthread网站手册。
+
+三、
+本工程初始使用时，需要修改
+MDK：options->debug->setting->FlashDownload 标签页中添加 STM32F10x Connectiovity Line Flash 。

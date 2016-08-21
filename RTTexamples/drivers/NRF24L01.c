@@ -362,21 +362,11 @@ int rf1start(void)
 
 void rf1send(rt_uint8_t * str)
 { 
-  static int n = 0; 
-  unsigned char strtemp[3] = {0x00};
-      TX_Mode();
-  while(1)
-  {
       rt_kprintf("\r\n \r\n"); 
-      sprintf(strtemp,"%03d",n++);
-      if(n>=999) n = 0;
-      rt_kprintf("\r\n RF1 发送数据：%s \r\n", strtemp); 
-      NRF24L01_TxPacket(strtemp);
-      //RX_Mode();
-      rt_thread_delay(1);
-      
-  }
-
+      TX_Mode();
+      rt_kprintf("\r\n RF1 发送数据：%s \r\n", str); 
+      NRF24L01_TxPacket(str);
+      RX_Mode();
 }
 
 

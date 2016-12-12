@@ -183,6 +183,29 @@ void USART1_IRQHandler(void)
 #endif
 }
 
+/*******************************************************************************
+* Function Name  : USART4_IRQHandler
+* Description    : This function handles USART4 global interrupt request.
+* Input          : None
+* Output         : None
+* Return         : None
+*******************************************************************************/
+void UART4_IRQHandler(void)
+{
+#ifdef RT_USING_UART4
+    extern struct rt_device uart4_device;
+    extern void rt_hw_serial_isr(struct rt_device *device);
+
+    // enter interrupt 
+    rt_interrupt_enter();
+
+    rt_hw_serial_isr(&uart4_device);
+
+    // leave interrupt 
+    rt_interrupt_leave();
+#endif
+}
+
 /**
   * @}
   */

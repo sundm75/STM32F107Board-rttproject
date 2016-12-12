@@ -50,9 +50,8 @@ Others:   串口接收数据后，检测 关键字{"value":**}来获取 GET方法得到的数据
 
 #define ESP8266_CWJAP "AT+CWJAP=\"sundm75\",\"121111215\"\x00D\x00A"      // 加入接入点 TP-LINK_sundm
 #define ESP8266_CIPMUX "AT+CIPMUX=0\x00D\x00A"      // 设置单连接
-#define ESP8266_CIPMUX "AT+CIPMODE=1\x00D\x00A"      // 设置透传模式
+#define ESP8266_CIPMODE "AT+CIPMODE=1\x00D\x00A"      // 设置透传模式
 
-#define ESP8266_CIPSTART "AT+CIPSTART=\"TCP\",\"192.168.1.150\",80\x00D\x00A"      // 建立TCP/UDP连接
 #define ESP8266_CIPSTART "AT+CIPSTART=\"TCP\",\"42.96.164.52\",80\x00D\x00A"      // 建立TCP/UDP连接
 #define ESP8266_CIPSTATUS "AT+CIPSTATUS\x00D\x00A"      // 获得TCP/UDP连接状态
 #define ESP8266_CIPSEND "AT+CIPSEND="      // 发送数据

@@ -24,8 +24,8 @@
 
 /* STM32F107 ETH dirver options */
 #define CHECKSUM_BY_HARDWARE
-#define MII_MODE          /* MII mode for STM3210C-EVAL Board (MB784) (check jumpers setting) */
-//#define RMII_MODE       /* RMII mode for STM3210C-EVAL Board (MB784) (check jumpers setting) */
+//#define MII_MODE          /* MII mode for STM3210C-EVAL Board (MB784) (check jumpers setting) */
+#define RMII_MODE       /* RMII mode for STM3210C-EVAL Board (MB784) (check jumpers setting) */
 
 
 /** @addtogroup STM32_ETH_Driver

@@ -126,10 +126,10 @@ void test_client(void)
    conn = netconn_new(NETCONN_TCP);
 
    /* set ip address */
-   IP4_ADDR(&ip, 192, 168, 1, 102);
+   IP4_ADDR(&ip, 192, 168, 1, 234);
    
    /* connect to server */
-   err = netconn_connect(conn, &ip, 8999);
+   err = netconn_connect(conn, &ip, 9000);
    
    rt_kprintf("connect error code: %d\n", err);
    

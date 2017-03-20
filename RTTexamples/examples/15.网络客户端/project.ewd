@@ -1278,19 +1278,19 @@
     </settings>
     <debuggerPlugins>
       <plugin>
-        <file>$TOOLKIT_DIR$\plugins\rtos\uCOS-II\uCOS-II-286-KA-CSpy.ewplugin</file>
-        <loadFlag>0</loadFlag>
-      </plugin>
-      <plugin>
-        <file>$TOOLKIT_DIR$\plugins\rtos\uCOS-II\uCOS-II-KA-CSpy.ewplugin</file>
-        <loadFlag>0</loadFlag>
-      </plugin>
-      <plugin>
-        <file>$TOOLKIT_DIR$\plugins\rtos\uCOS-III\uCOS-III-KA-CSpy.ewplugin</file>
+        <file>$TOOLKIT_DIR$\plugins\middleware\HCCWare\HCCWare.ewplugin</file>
         <loadFlag>0</loadFlag>
       </plugin>
       <plugin>
         <file>$TOOLKIT_DIR$\plugins\rtos\AVIX\AVIX.ENU.ewplugin</file>
+        <loadFlag>0</loadFlag>
+      </plugin>
+      <plugin>
+        <file>$TOOLKIT_DIR$\plugins\rtos\CMX\CmxArmPlugin.ENU.ewplugin</file>
+        <loadFlag>0</loadFlag>
+      </plugin>
+      <plugin>
+        <file>$TOOLKIT_DIR$\plugins\rtos\CMX\CmxTinyArmPlugin.ENU.ewplugin</file>
         <loadFlag>0</loadFlag>
       </plugin>
       <plugin>
@@ -1310,23 +1310,23 @@
         <loadFlag>0</loadFlag>
       </plugin>
       <plugin>
-        <file>$TOOLKIT_DIR$\plugins\rtos\TI-RTOS\tirtosplugin.ewplugin</file>
-        <loadFlag>0</loadFlag>
-      </plugin>
-      <plugin>
-        <file>$TOOLKIT_DIR$\plugins\rtos\CMX\CmxArmPlugin.ENU.ewplugin</file>
-        <loadFlag>0</loadFlag>
-      </plugin>
-      <plugin>
-        <file>$TOOLKIT_DIR$\plugins\rtos\CMX\CmxTinyArmPlugin.ENU.ewplugin</file>
-        <loadFlag>0</loadFlag>
-      </plugin>
-      <plugin>
         <file>$TOOLKIT_DIR$\plugins\rtos\ThreadX\ThreadXArmPlugin.ENU.ewplugin</file>
         <loadFlag>0</loadFlag>
       </plugin>
       <plugin>
-        <file>$TOOLKIT_DIR$\plugins\middleware\HCCWare\HCCWare.ewplugin</file>
+        <file>$TOOLKIT_DIR$\plugins\rtos\TI-RTOS\tirtosplugin.ewplugin</file>
+        <loadFlag>0</loadFlag>
+      </plugin>
+      <plugin>
+        <file>$TOOLKIT_DIR$\plugins\rtos\uCOS-II\uCOS-II-286-KA-CSpy.ewplugin</file>
+        <loadFlag>0</loadFlag>
+      </plugin>
+      <plugin>
+        <file>$TOOLKIT_DIR$\plugins\rtos\uCOS-II\uCOS-II-KA-CSpy.ewplugin</file>
+        <loadFlag>0</loadFlag>
+      </plugin>
+      <plugin>
+        <file>$TOOLKIT_DIR$\plugins\rtos\uCOS-III\uCOS-III-KA-CSpy.ewplugin</file>
         <loadFlag>0</loadFlag>
       </plugin>
       <plugin>
@@ -2623,19 +2623,19 @@
     </settings>
     <debuggerPlugins>
       <plugin>
-        <file>$TOOLKIT_DIR$\plugins\rtos\uCOS-II\uCOS-II-286-KA-CSpy.ewplugin</file>
-        <loadFlag>0</loadFlag>
-      </plugin>
-      <plugin>
-        <file>$TOOLKIT_DIR$\plugins\rtos\uCOS-II\uCOS-II-KA-CSpy.ewplugin</file>
-        <loadFlag>0</loadFlag>
-      </plugin>
-      <plugin>
-        <file>$TOOLKIT_DIR$\plugins\rtos\uCOS-III\uCOS-III-KA-CSpy.ewplugin</file>
+        <file>$TOOLKIT_DIR$\plugins\middleware\HCCWare\HCCWare.ewplugin</file>
         <loadFlag>0</loadFlag>
       </plugin>
       <plugin>
         <file>$TOOLKIT_DIR$\plugins\rtos\AVIX\AVIX.ENU.ewplugin</file>
+        <loadFlag>0</loadFlag>
+      </plugin>
+      <plugin>
+        <file>$TOOLKIT_DIR$\plugins\rtos\CMX\CmxArmPlugin.ENU.ewplugin</file>
+        <loadFlag>0</loadFlag>
+      </plugin>
+      <plugin>
+        <file>$TOOLKIT_DIR$\plugins\rtos\CMX\CmxTinyArmPlugin.ENU.ewplugin</file>
         <loadFlag>0</loadFlag>
       </plugin>
       <plugin>
@@ -2655,23 +2655,23 @@
         <loadFlag>0</loadFlag>
       </plugin>
       <plugin>
-        <file>$TOOLKIT_DIR$\plugins\rtos\TI-RTOS\tirtosplugin.ewplugin</file>
-        <loadFlag>0</loadFlag>
-      </plugin>
-      <plugin>
-        <file>$TOOLKIT_DIR$\plugins\rtos\CMX\CmxArmPlugin.ENU.ewplugin</file>
-        <loadFlag>0</loadFlag>
-      </plugin>
-      <plugin>
-        <file>$TOOLKIT_DIR$\plugins\rtos\CMX\CmxTinyArmPlugin.ENU.ewplugin</file>
-        <loadFlag>0</loadFlag>
-      </plugin>
-      <plugin>
         <file>$TOOLKIT_DIR$\plugins\rtos\ThreadX\ThreadXArmPlugin.ENU.ewplugin</file>
         <loadFlag>0</loadFlag>
       </plugin>
       <plugin>
-        <file>$TOOLKIT_DIR$\plugins\middleware\HCCWare\HCCWare.ewplugin</file>
+        <file>$TOOLKIT_DIR$\plugins\rtos\TI-RTOS\tirtosplugin.ewplugin</file>
+        <loadFlag>0</loadFlag>
+      </plugin>
+      <plugin>
+        <file>$TOOLKIT_DIR$\plugins\rtos\uCOS-II\uCOS-II-286-KA-CSpy.ewplugin</file>
+        <loadFlag>0</loadFlag>
+      </plugin>
+      <plugin>
+        <file>$TOOLKIT_DIR$\plugins\rtos\uCOS-II\uCOS-II-KA-CSpy.ewplugin</file>
+        <loadFlag>0</loadFlag>
+      </plugin>
+      <plugin>
+        <file>$TOOLKIT_DIR$\plugins\rtos\uCOS-III\uCOS-III-KA-CSpy.ewplugin</file>
         <loadFlag>0</loadFlag>
       </plugin>
       <plugin>

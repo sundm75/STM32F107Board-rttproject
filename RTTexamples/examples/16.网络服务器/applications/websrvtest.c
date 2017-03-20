@@ -31,27 +31,29 @@ static void process_connection(struct netconn *conn)
 	char *rq;
 	rt_uint16_t len;
         rt_err_t net_rev_result;
-
+        
 	/*  从这个连接读取数据到inbuf，我们假定在这个netbuf中包含完整的请求 */
         net_rev_result = netconn_recv(conn, &inbuf);
 
-	/*  获取指向netbuf中第一个数据片断的指针，在这个数据片段里我们希望包含这个请求 */
+	if(net_rev_result == ERR_OK){
+        /*  获取指向netbuf中第一个数据片断的指针，在这个数据片段里我们希望包含这个请求 */
 	netbuf_data(inbuf, (void**)&rq, &len);
 
-	/*  检查这个请求是不是HTTP "GET /\r\n"  */
-	if( rq[0] == 'G' &&
-		rq[1] == 'E' &&
-		rq[2] == 'T' &&
-		rq[3] == ' ')
-	{
-		/*  发送头部数据 */
-		netconn_write(conn, http_html_hdr, sizeof(http_html_hdr), NETCONN_NOCOPY);
-		/*  发送实际的web页面 */
-		netconn_write(conn, indexdata, sizeof(indexdata), NETCONN_NOCOPY);
+          /*  检查这个请求是不是HTTP "GET /\r\n"  */
+          if( rq[0] == 'G' &&
+                  rq[1] == 'E' &&
+                  rq[2] == 'T' &&
+                  rq[3] == ' ')
+          {
+                  /*  发送头部数据 */
+                  netconn_write(conn, http_html_hdr, sizeof(http_html_hdr), NETCONN_NOCOPY);
+                  /*  发送实际的web页面 */
+                  netconn_write(conn, indexdata, sizeof(indexdata), NETCONN_NOCOPY);
 
-		/*  关闭连接 */
-		netconn_close(conn);
-	}
+          }
+        }
+        /*  关闭连接 */
+        netconn_close(conn);
 	netbuf_delete(inbuf);
 }
 

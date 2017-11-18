@@ -91,8 +91,8 @@ History:
 #define TX_PLOAD_WIDTH  32                              //20字节的用户数据宽度
 #define RX_PLOAD_WIDTH  32                              //20字节的用户数据宽度
 
-const rt_uint8_t static  TX_ADDRESS[TX_ADR_WIDTH]={0x34,0x43,0x10,0x10,0x01}; //发送地址
-const rt_uint8_t static  RX_ADDRESS[RX_ADR_WIDTH]={0x34,0x43,0x10,0x10,0x01}; //发送地址	
+const rt_uint8_t static  TX_ADDRESS[TX_ADR_WIDTH]={0x73,0x75,0x6E,0x64,0x6D}; //发送地址73,75,6E,64,6D
+const rt_uint8_t static  RX_ADDRESS[RX_ADR_WIDTH]={0x73,0x75,0x6E,0x64,0x6D}; //发送地址	
 
 /*******************************************************************************
 * Function Name  : NRF24L01_Write_Reg

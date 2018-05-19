@@ -1,5 +1,5 @@
 这个仓库放了基于STM32F107 CPU的内核源码和示例。 网盘中存放了 内核源码、必要的工具链、学习视频、电路图等 。 百度网盘地址：
-https://pan.baidu.com/s/1c1QaE5q
+ https://pan.baidu.com/s/1Oa8RiowgHlVeBpcsWr4KZg
 
 1.Documents 为所有例程的说明文档
 2.Hardware为硬件原理图及设计说明书

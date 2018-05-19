@@ -1,27 +1,27 @@
 /***************************2012-2016, NJUT, Edu.******************************* 
 FileName: esp8266.c 
-Author:  Ëï¶¬Ã·       Version :  1.0       Date: 2016.11.26
-Description:   wifiÄ£¿éÍ¨ĞÅ
+Author:  å­™å†¬æ¢…       Version :  1.0       Date: 2016.11.26
+Description:   wifiæ¨¡å—é€šä¿¡
 Version:         1.0
 History:         
       <author>  <time>   <version >   <desc> 
-      Sundm    16/11/10    1.0       ÎÄ¼ş´´½¨  
+      Sundm    16/11/10    1.0       æ–‡ä»¶åˆ›å»º  
 
-Description£ºÉè±¸³õÊ¼»¯£¬²éÕÒwifi´®¿Ú(UART4)Éè±¸´ò¿ª£¬×¢²á»Øµ÷º¯Êı£¬³õÊ¼»¯´®¿Ú½ÓÊÕÊÂ¼ş¡£
-¿ªÆôÏß³Ì£¬¼àÊÓ´®¿ÚÊı¾İ¡£
-·¢ËÍATÖ¸ÁîÊ±£¬¹Ø±Õ´®¿Ú¼àÊÓÏß³Ì¡£
-´®¿ÚÊÕµ½Êı¾İºó£¬ÔËĞĞÊı¾İµ½´ï»Øµ÷º¯Êı,·¢ËÍÊÂ¼şµ½wifi_send_data_package¡£
-wifi_send_data_packageÖĞ½ÓÊÕÊı¾İ£¬²¢¼ì²éÊı¾İ¡£
-Ê¹ÓÃ  PC10-USART4Tx PC11-USART4Rx CS-PC9
-Others:   ´®¿Ú½ÓÊÕÊı¾İºó£¬¼ì²â ¹Ø¼ü×Ö{"value":**}À´»ñÈ¡ GET·½·¨µÃµ½µÄÊı¾İ
+Descriptionï¼šè®¾å¤‡åˆå§‹åŒ–ï¼ŒæŸ¥æ‰¾wifiä¸²å£(UART4)è®¾å¤‡æ‰“å¼€ï¼Œæ³¨å†Œå›è°ƒå‡½æ•°ï¼Œåˆå§‹åŒ–ä¸²å£æ¥æ”¶äº‹ä»¶ã€‚
+å¼€å¯çº¿ç¨‹ï¼Œç›‘è§†ä¸²å£æ•°æ®ã€‚
+å‘é€ATæŒ‡ä»¤æ—¶ï¼Œå…³é—­ä¸²å£ç›‘è§†çº¿ç¨‹ã€‚
+ä¸²å£æ”¶åˆ°æ•°æ®åï¼Œè¿è¡Œæ•°æ®åˆ°è¾¾å›è°ƒå‡½æ•°,å‘é€äº‹ä»¶åˆ°wifi_send_data_packageã€‚
+wifi_send_data_packageä¸­æ¥æ”¶æ•°æ®ï¼Œå¹¶æ£€æŸ¥æ•°æ®ã€‚
+ä½¿ç”¨  PC10-USART4Tx PC11-USART4Rx CS-PC9
+Others:   ä¸²å£æ¥æ”¶æ•°æ®åï¼Œæ£€æµ‹ å…³é”®å­—{"value":**}æ¥è·å– GETæ–¹æ³•å¾—åˆ°çš„æ•°æ®
   Function List:  
-   1. wificonfig() ²éÕÒwifi´®¿ÚÉè±¸²¢´ò¿ª£¬×¢²á»Øµ÷º¯Êı£¬³õÊ¼»¯´®¿Ú½ÓÊÕÊÂ¼ş
-   2. wifiinit(); wifiÉèÖÃ
-   3. wifijap() £»¼ÓÈëAP
-   4. wificonnect(); ´ò¿ªÔ¶³ÌÁ¬½ÓÍøÂç
-   5. wifisend("abc"); ÍøÂçÊı¾İ·¢ËÍ
-   6. wificloseconnect(); ¹Ø±ÕÔ¶³ÌÁ¬½ÓÍøÂç
-   7. wifiexit();  wifiÍË³öAP ²¢¹Ø±Õ
+   1. wificonfig() æŸ¥æ‰¾wifiä¸²å£è®¾å¤‡å¹¶æ‰“å¼€ï¼Œæ³¨å†Œå›è°ƒå‡½æ•°ï¼Œåˆå§‹åŒ–ä¸²å£æ¥æ”¶äº‹ä»¶
+   2. wifiinit(); wifiè®¾ç½®
+   3. wifijap() ï¼›åŠ å…¥AP
+   4. wificonnect(); æ‰“å¼€è¿œç¨‹è¿æ¥ç½‘ç»œ
+   5. wifisend("abc"); ç½‘ç»œæ•°æ®å‘é€
+   6. wificloseconnect(); å…³é—­è¿œç¨‹è¿æ¥ç½‘ç»œ
+   7. wifiexit();  wifié€€å‡ºAP å¹¶å…³é—­
 *******************************************************************************/ 
 #include  <rtthread.h >
 #include "esp8266.h"
@@ -31,34 +31,40 @@ Others:   ´®¿Ú½ÓÊÕÊı¾İºó£¬¼ì²â ¹Ø¼ü×Ö{"value":**}À´»ñÈ¡ GET·½·¨µÃµ½µÄÊı¾İ
 #include "led.h"
 
 
-//¶¨ÒåwifiÊ¹ÓÃ´®¿Ú ºÍ ¿ØÖÆ¿Ú£¨CS£©
+//å®šä¹‰wifiä½¿ç”¨ä¸²å£ å’Œ æ§åˆ¶å£ï¼ˆCSï¼‰
 #define WIFI_PORT GPIOC
 #define WIFI_PORT_RCC        RCC_APB2Periph_GPIOC
 #define WIFI_CS_PIN GPIO_Pin_9
 
-//¶¨ÒåATÖ¸Áî
-#define ESP8266_ATCMD "AT\x00D\x00A"               // AT²éÑ¯
-#define ESP8266_RESET "AT+RST\x00D\x00A"           // Ä£¿é¸´Î»
+//å®šä¹‰ATæŒ‡ä»¤
+#define ESP8266_ATCMD "AT\x00D\x00A"               // ATæŸ¥è¯¢
+#define ESP8266_RESET "AT+RST\x00D\x00A"           // æ¨¡å—å¤ä½
 
-#define ESP8266_CWMODE_STA "AT+CWMODE=1\x00D\x00A"      // Ñ¡ÔñWiFiÓ¦ÓÃÄ£Ê½  StationÄ£Ê½
-#define ESP8266_CWMODE_AP "AT+CWMODE=2\x00D\x00A"      // Ñ¡ÔñWiFiÓ¦ÓÃÄ£Ê½  APÄ£Ê½
-#define ESP8266_CWMODE_APSTA "AT+CWMODE=3\x00D\x00A"      // Ñ¡ÔñWiFiÓ¦ÓÃÄ£Ê½  Station+APÄ£Ê½
+#define ESP8266_CWMODE_STA "AT+CWMODE=1\x00D\x00A"      // é€‰æ‹©WiFiåº”ç”¨æ¨¡å¼  Stationæ¨¡å¼
+#define ESP8266_CWMODE_AP "AT+CWMODE=2\x00D\x00A"      // é€‰æ‹©WiFiåº”ç”¨æ¨¡å¼  APæ¨¡å¼
+#define ESP8266_CWMODE_APSTA "AT+CWMODE=3\x00D\x00A"      // é€‰æ‹©WiFiåº”ç”¨æ¨¡å¼  Station+APæ¨¡å¼
 
-#define ESP8266_CWLAP "AT+CWLAP\x00D\x00A"      // ÁĞ³öµ±Ç°½ÓÈëµã
-#define ESP8266_CWQAP "AT+CWQAP\x00D\x00A"      // ÍË³ö
-#define ESP8266_CIFSR "AT+CIFSR\x00D\x00A"      // »ñÈ¡±¾µØIPµØÖ·
+#define ESP8266_CWLAP "AT+CWLAP\x00D\x00A"      // åˆ—å‡ºå½“å‰æ¥å…¥ç‚¹
+#define ESP8266_CWQAP "AT+CWQAP\x00D\x00A"      // é€€å‡º
+#define ESP8266_CIFSR "AT+CIFSR\x00D\x00A"      // è·å–æœ¬åœ°IPåœ°å€
 
-#define ESP8266_CWJAP "AT+CWJAP=\"sundm75\",\"121111215\"\x00D\x00A"      // ¼ÓÈë½ÓÈëµã TP-LINK_sundm
-#define ESP8266_CIPMUX "AT+CIPMUX=0\x00D\x00A"      // ÉèÖÃµ¥Á¬½Ó
-#define ESP8266_CIPMODE "AT+CIPMODE=1\x00D\x00A"      // ÉèÖÃÍ¸´«Ä£Ê½
+#define ESP8266_CWJAP "AT+CWJAP=\"sundm75\",\"121111215\"\x00D\x00A"      // åŠ å…¥æ¥å…¥ç‚¹ TP-LINK_sundm
+#define ESP8266_CIPMUX "AT+CIPMUX=0\x00D\x00A"      // è®¾ç½®å•è¿æ¥
+#define ESP8266_CIPMODE "AT+CIPMODE=1\x00D\x00A"      // è®¾ç½®é€ä¼ æ¨¡å¼
 
+<<<<<<< HEAD
 #define ESP8266_CIPSTART "AT+CIPSTART=\"TCP\",\"api.yeelink.net\",80\x00D\x00A"      // ½¨Á¢TCP/UDPÁ¬½Ó
 #define ESP8266_CIPSTATUS "AT+CIPSTATUS\x00D\x00A"      // »ñµÃTCP/UDPÁ¬½Ó×´Ì¬
 #define ESP8266_CIPSEND "AT+CIPSEND="      // ·¢ËÍÊı¾İ
+=======
+#define ESP8266_CIPSTART "AT+CIPSTART=\"TCP\",\"api.yeelink.net\",80\x00D\x00A"      // å»ºç«‹TCP/UDPè¿æ¥
+#define ESP8266_CIPSTATUS "AT+CIPSTATUS\x00D\x00A"      // è·å¾—TCP/UDPè¿æ¥çŠ¶æ€
+#define ESP8266_CIPSEND "AT+CIPSEND="      // å‘é€æ•°æ®
+>>>>>>> remotes/rttproject/master
 
-#define ESP8266_CIPCLOSE "AT+CIPCLOSE\x00D\x00A"      // ¹Ø±ÕTCP/UDPÁ¬½Ó
+#define ESP8266_CIPCLOSE "AT+CIPCLOSE\x00D\x00A"      // å…³é—­TCP/UDPè¿æ¥
 
-/***************************WIFIÄ£¿é´®¿Ú½ÓÊÕ”µ“şÊÂ¼ş******************************/
+/***************************WIFIæ¨¡å—ä¸²å£æ¥æ”¶æ•¸æ“šäº‹ä»¶******************************/
 #define REV_DATA      0x01
 #define REV_WATCH      0x02
 #define REV_STOPWATCH      0x04
@@ -70,7 +76,7 @@ static struct rt_event rev_event;
 static rt_device_t wifi_device;
 
 
-/* ¼àÊÓWIFI´®¿ÚÏß³ÌÈë¿Ú*/
+/* ç›‘è§†WIFIä¸²å£çº¿ç¨‹å…¥å£*/
 void wifiwatch_entry(void* parameter)
 {
   rt_err_t result = RT_EOK;
@@ -96,7 +102,7 @@ void wifiwatch_entry(void* parameter)
           rt_thread_delay(RT_TICK_PER_SECOND/2);
           readnum = rt_device_read(wifi_device, 0, wifi_rx_buffer, 512);
           rt_kprintf(wifi_rx_buffer);
-          /*ÒÔÏÂ»ñÈ¡´®¿Ú½ÓÊÕÊı¾İ ÖĞµÄ valueÖµ */
+          /*ä»¥ä¸‹è·å–ä¸²å£æ¥æ”¶æ•°æ® ä¸­çš„ valueå€¼ */
           charaddr = rt_strstr(wifi_rx_buffer,"\"value\":");
           if(charaddr!=RT_NULL)
           {
@@ -123,7 +129,7 @@ void wifiwatch_entry(void* parameter)
               }              
             }
           }
-          /*»ñÈ¡´®¿Ú½ÓÊÕÊı¾İ ÖĞµÄ valueÖµ ½áÊø */
+          /*è·å–ä¸²å£æ¥æ”¶æ•°æ® ä¸­çš„ valueå€¼ ç»“æŸ */
         }
         if (event & REV_STOPWATCH)
         {
@@ -135,12 +141,12 @@ void wifiwatch_entry(void* parameter)
 
 void wifiwatch(void)
 {
-  /* ´´½¨wifi watchÏß³Ì*/
+  /* åˆ›å»ºwifi watchçº¿ç¨‹*/
   rt_thread_t thread = rt_thread_create("wifiwatch",
   wifiwatch_entry, RT_NULL,
   1024, 25, 7);
   
-  /* ´´½¨³É¹¦ÔòÆô¶¯Ïß³Ì*/
+  /* åˆ›å»ºæˆåŠŸåˆ™å¯åŠ¨çº¿ç¨‹*/
   if (thread != RT_NULL)
     rt_thread_startup(thread);
 }
@@ -149,14 +155,14 @@ void wifistopwatch(void)
   rt_event_send(&rev_event, REV_STOPWATCH);
 }
 
-/*Êı¾İµ½´ï»Øµ÷º¯Êı,·¢ËÍÊÂ¼şµ½wifi_send_data_package*/
+/*æ•°æ®åˆ°è¾¾å›è°ƒå‡½æ•°,å‘é€äº‹ä»¶åˆ°wifi_send_data_package*/
 static rt_err_t wifi_uart_input(rt_device_t dev, rt_size_t size)
 {
   rt_event_send(&rev_event, REV_DATA);
   return RT_EOK;
 }
 
-/*WIFI´®¿Ú·¢ËÍºÍ½ÓÊÕ*/
+/*WIFIä¸²å£å‘é€å’Œæ¥æ”¶*/
 rt_bool_t wifi_send_data_package(char *cmd,char *ack,uint16_t waittime, uint8_t retrytime)
 {
   rt_bool_t res = RT_FALSE; 
@@ -195,7 +201,7 @@ rt_bool_t wifi_send_data_package(char *cmd,char *ack,uint16_t waittime, uint8_t 
 } 
 
 
-/*WIFI¶Ë¿Ú³õÊ¼»¯£¬´ò¿ªÉè±¸£¬×¢²á»Øµ÷º¯Êı*/
+/*WIFIç«¯å£åˆå§‹åŒ–ï¼Œæ‰“å¼€è®¾å¤‡ï¼Œæ³¨å†Œå›è°ƒå‡½æ•°*/
 rt_bool_t wificonfig(void)
 {
   GPIO_InitTypeDef GPIO_InitStructure;
@@ -213,7 +219,7 @@ rt_bool_t wificonfig(void)
   if (wifi_device != RT_NULL)    
   {
     rt_kprintf("\r\n Wifi port initialized!\r\n");
-    /* ÉèÖÃ»Øµ÷º¯Êı¼°´ò¿ªÉè±¸*/
+    /* è®¾ç½®å›è°ƒå‡½æ•°åŠæ‰“å¼€è®¾å¤‡*/
     rt_device_set_rx_indicate(wifi_device, wifi_uart_input);
     rt_device_open(wifi_device, RT_DEVICE_OFLAG_RDWR);  
   }
@@ -222,12 +228,12 @@ rt_bool_t wificonfig(void)
     rt_kprintf("\r\n Wifi port not find !\r\n");
     return RT_FALSE;
   }
-  /*WIFI´®¿Ú´ò¿ªºó£¬³õÊ¼»¯´®¿Ú½ÓÊÕÊÂ¼ş*/
+  /*WIFIä¸²å£æ‰“å¼€åï¼Œåˆå§‹åŒ–ä¸²å£æ¥æ”¶äº‹ä»¶*/
   rt_event_init(&rev_event, "rev_ev", RT_IPC_FLAG_FIFO);
   return RT_TRUE;
 }
 
-rt_bool_t wifiinit() //wifi½ÓÈëAP
+rt_bool_t wifiinit() //wifiæ¥å…¥AP
 {
   if(wifi_send_data_package(ESP8266_ATCMD,"OK",2,1))
   {
@@ -248,8 +254,8 @@ rt_bool_t wifiinit() //wifi½ÓÈëAP
  
   rt_thread_delay(RT_TICK_PER_SECOND*5);
   
-  //rt_kprintf("\r\n Wifi  µ±Ç°AP£º\r\n");
-  //if(wifi_send_data_package(ESP8266_CWLAP,"OK",1,1))//ÁĞ³öµ±Ç°½ÓÈëµã
+  //rt_kprintf("\r\n Wifi  å½“å‰APï¼š\r\n");
+  //if(wifi_send_data_package(ESP8266_CWLAP,"OK",1,1))//åˆ—å‡ºå½“å‰æ¥å…¥ç‚¹
  // {
  //   rt_device_write(wifi_device, 0, ESP8266_CWLAP, rt_strlen(ESP8266_CWLAP)); 
  // }
@@ -258,18 +264,18 @@ rt_bool_t wifiinit() //wifi½ÓÈëAP
 //    return RT_FALSE; 
   
   
-//  if(wifi_send_data_package(ESP8266_CIPSTATUS,"OK",2,1))// »ñµÃTCP/UDPÁ¬½Ó×´Ì¬
+//  if(wifi_send_data_package(ESP8266_CIPSTATUS,"OK",2,1))// è·å¾—TCP/UDPè¿æ¥çŠ¶æ€
 //  {
 //  }
-//  rt_kprintf("\r\n Wifi »ñµÃTCP/UDPÁ¬½Ó×´Ì¬");
+//  rt_kprintf("\r\n Wifi è·å¾—TCP/UDPè¿æ¥çŠ¶æ€");
 //  rt_thread_delay(RT_TICK_PER_SECOND*1);
 //  else
 //    return RT_FALSE; 
     return RT_TRUE; 
 }
-rt_bool_t wifijap() //¼ÓÈëAP
+rt_bool_t wifijap() //åŠ å…¥AP
 {
-  rt_kprintf("\r\n Wifi  ×¼±¸ ½ÓÈëAP sundm75\r\n");
+  rt_kprintf("\r\n Wifi  å‡†å¤‡ æ¥å…¥AP sundm75\r\n");
 
   if(wifi_send_data_package(ESP8266_CWJAP,"OK",2,1))
   {
@@ -279,7 +285,7 @@ rt_bool_t wifijap() //¼ÓÈëAP
   return RT_TRUE; 
 }
 
-rt_bool_t wificonnect() //´ò¿ªÔ¶³ÌÁ¬½ÓÍøÂç
+rt_bool_t wificonnect() //æ‰“å¼€è¿œç¨‹è¿æ¥ç½‘ç»œ
 {
   rt_kprintf("\r\n Wifi Connect %s \r\n",ESP8266_CIPSTART);
 
@@ -292,7 +298,7 @@ rt_bool_t wificonnect() //´ò¿ªÔ¶³ÌÁ¬½ÓÍøÂç
     return RT_TRUE; 
 }
 
-rt_bool_t wifisend(char * str) //ÍøÂçÊı¾İ·¢ËÍ
+rt_bool_t wifisend(char * str) //ç½‘ç»œæ•°æ®å‘é€
 {
   uint8_t lenstr[64]={0x00};
   rt_kprintf("\r\n Wifi send data! Display information from module:\r\n");
@@ -311,7 +317,7 @@ rt_bool_t wifisend(char * str) //ÍøÂçÊı¾İ·¢ËÍ
 }
 
 
-rt_bool_t wificloseconnect()// ¹Ø±ÕÔ¶³ÌÁ¬½ÓÍøÂç
+rt_bool_t wificloseconnect()// å…³é—­è¿œç¨‹è¿æ¥ç½‘ç»œ
 {
   rt_kprintf("\r\n Wifi closeconnect! Display information from module:\r\n");
 
@@ -325,7 +331,7 @@ rt_bool_t wificloseconnect()// ¹Ø±ÕÔ¶³ÌÁ¬½ÓÍøÂç
 }
 
 
-rt_bool_t wifiexit() // wifiÍË³öAP
+rt_bool_t wifiexit() // wifié€€å‡ºAP
 {
   rt_kprintf("\r\n Wifi wifi exit! Display information from module:\r\n");
 
